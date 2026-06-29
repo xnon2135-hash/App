@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PhotoForge - Editor</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <div id="sidebar" class="sidebar">
+    <div class="tool-group">
+      <h3>Upload</h3>
+      <label class="btn">
+        <input type="file" id="img-upload" accept="image/*">
+        Add Image
+      </label>
+      <button id="add-text">Add Text</button>
+    </div>
+    
+    <div class="tool-group">
+      <h3>Elements</h3>
+      <button id="add-rect">Rectangle</button>
+      <button id="add-circle">Circle</button>
+    </div>
+
+    <div class="tool-group">
+      <h3>Filters</h3>
+      <button id="filter-grayscale">Grayscale</button>
+      <button id="filter-sepia">Sepia</button>
+      <button id="filter-blur">Blur</button>
+      <button id="filter-none">Remove Filters</button>
+    </div>
+
+    <div class="tool-group">
+      <h3>Layers</h3>
+      <button id="bring-front">Bring to Front</button>
+      <button id="send-back">Send to Back</button>
+      <button id="delete">Delete Selected</button>
+    </div>
+  </div>
+
+  <div id="main" class="main">
+    <div id="toolbar" class="toolbar">
+      <button id="export">Export PNG</button>
+      <button id="clear">Clear Canvas</button>
+      <span class="title">PhotoForge</span>
+    </div>
+    <div id="canvas-wrap" class="canvas-wrap">
+      <canvas id="canvas" width="800" height="600"></canvas>
+    </div>
+  </div>
+
+  <script type="module" src="./index.js"></script>
+</body>
+</html>
